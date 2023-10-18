@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+
+}
+
+.time-block{
+    background-color: bisque;
+    color:brown;
+    padding:64px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    gap:8px;
+    display: none;
+}
+
+.time-block h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.time-block .count{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.time-button{
+outline: none;
+border:none;
+background-color: brown;
+color:rgb(255, 255, 255);
+font-weight: 500;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+padding:15px 56px;
+transition: all ease-in-out 0.5s;
+display: none;
+}
+
+.time-button:hover{
+    background-color: rgb(26, 112, 75);
+    color:rgb(255, 255, 255);
+}
+    
+
+.time-block.active{
+    display: block;
+}
+
+.time-button.active{
+    display: block;
+}
